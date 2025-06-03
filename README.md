@@ -4,5 +4,5 @@ Welcome to the lab. This website has been torn apart, revised, redesigned, and p
 
 ### Powered By...
 - Astro
-- Tailwind CSS
+- Tailwind CSS (with Catppuccin Mocha plugin)
 - Bun

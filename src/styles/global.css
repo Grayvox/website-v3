@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+/* Why this over the Catppuccin plugin? ...I couldn't get it working... */
+@theme inline {
+    --color-cat-rosewater: #f5e0dc;
+    --color-cat-flamingo: #f2cdcd;
+    --color-cat-pink: #f5c2e7;
+    --color-cat-mauve: #cba6f7;
+    --color-cat-red: #f38ba8;
+    --color-cat-maroon: #eba0ac;
+    --color-cat-peach: #fab387;
+    --color-cat-yellow: #f9e2af;
+    --color-cat-green: #a6e3a1;
+    --color-cat-teal: #94e2d5;
+    --color-cat-sky: #89dceb;
+    --color-cat-sapphire: #74c7ec;
+    --color-cat-blue: #89b4fa;
+    --color-cat-lavender: #b4befe;
+    --color-cat-text: #cdd6f4;
+    --color-cat-subtext1: #bac2de;
+    --color-cat-subtext0: #a6adc8;
+    --color-cat-overlay2: #9399b2;
+    --color-cat-overlay1: #7f849c;
+    --color-cat-overlay0: #6c7086;
+    --color-cat-surface2: #585b70;
+    --color-cat-surface1: #45475a;
+    --color-cat-surface0: #313244;
+    --color-cat-base: #1e1e2e;
+    --color-cat-mantle: #181825;
+    --color-cat-crust: #11111b;
+}
