@@ -1,5 +1,6 @@
 ---
 import Head from "./Head.astro";
+import NavBar from "../components/NavBar.astro";
 
 const { title } = Astro.props;
 
@@ -8,5 +9,7 @@ import './src/styles/global.css'
 
 <Head title={title} />
 <body>
-    <slot />
+    <div class="px-[25rem] py-10">
+        <NavBar />
+    </div>
 </body>

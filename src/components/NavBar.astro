@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import GrayVisor from '../assets/GrayvoxVisor.png';
+
+import NavLink from './NavLink.astro';
+---
+
+<div class="flex">
+    <div class="grow-1">
+        <Image src={GrayVisor} alt="Wolf with sunglasses avatar" width="50" class="hidden xl:block" />
+    </div>
+    <div class="mx-auto my-auto flex-1">
+        <NavLink href="/">Home</NavLink>
+        <NavLink href="/projects">Projects</NavLink>
+        <NavLink href="/blog">Writings</NavLink>
+        <NavLink href="/contact">Contact</NavLink>     
+    </div>
+</div>

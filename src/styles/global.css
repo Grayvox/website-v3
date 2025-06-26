@@ -29,3 +29,12 @@
     --color-cat-mantle: #181825;
     --color-cat-crust: #11111b;
 }
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+body {
+    background-color: var(--color-cat-base);
+}
