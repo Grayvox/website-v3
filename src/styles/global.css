@@ -38,3 +38,37 @@
 body {
     background-color: var(--color-cat-base);
 }
+
+h1, h2, h3 {
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.header-break {
+  margin-top: 5rem;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  margin: auto 2rem 2rem auto;
+  font-size: 18px;
+}
+
+a {
+  text-decoration-line: underline;
+}
+
+.no-line {
+  text-decoration-line: none;
+}
