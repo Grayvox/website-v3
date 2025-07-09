@@ -1,0 +1,15 @@
+---
+import FormattedDate from "../components/FormattedDate.astro";
+
+const { title, date, tag } = Astro.props;
+---
+
+<div>
+    <div>
+        <h1>{title}</h1>
+        <p class="text-cat-subtext0">↳ <FormattedDate date={date} />・{tag}</p>
+    </div>
+    <div>
+        <slot />
+    </div>
+</div>

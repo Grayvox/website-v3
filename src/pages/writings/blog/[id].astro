@@ -1,0 +1,22 @@
+---
+import { getCollection, render } from "astro:content";
+import BlogPost from "../../../layouts/BlogPost.astro";
+import Default from "../../../layouts/Default.astro";
+
+export async function getStaticPaths() {
+    const posts = await getCollection("blog");
+    return posts.map((post) => ({
+        params: { id: post.id },
+        props: { post },
+    }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Default title=`${post.data.title} - Grayvox`>
+    <BlogPost title={post.data.title} date={post.data.date} tag={post.data.tag}>
+        <Content />
+    </BlogPost>
+</Default>

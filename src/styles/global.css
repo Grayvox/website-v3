@@ -41,11 +41,15 @@ body {
 
 h1, h2, h3 {
   font-weight: 800;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem auto 2rem auto;
 }
 
-.header-break {
-  margin-top: 5rem;
+.no-break {
+  margin: 0 auto 0 auto;
+}
+
+.no-line {
+  text-decoration: none;
 }
 
 h1 {
