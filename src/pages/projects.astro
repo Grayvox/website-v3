@@ -1,0 +1,27 @@
+---
+import ProjectCard from "../components/ProjectCard.astro";
+import Default from "../layouts/Default.astro";
+
+import { getCollection } from "astro:content";
+const projects = await getCollection("projects");
+---
+
+<Default title="Project Roster - Grayvox">
+    <div>
+        <h1>Project Roster</h1>
+    </div>
+    <div>
+        <ul class="mt-10">
+            {
+                projects.map((project) => (
+                    <ProjectCard
+                        title={project.data.title}
+                        builtWith={project.data.builtWith}
+                    >
+                        {project.body}
+                    </ProjectCard>
+                ))
+            }
+        </ul>
+    </div>
+</Default>

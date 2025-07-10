@@ -2,24 +2,31 @@
 import BlogCard from "../../../components/BlogCard.astro";
 import Default from "../../../layouts/Default.astro";
 
-import { getCollection } from 'astro:content';
-const posts = await getCollection('blog');
+import { getCollection } from "astro:content";
+const posts = await getCollection("blog");
 ---
 
 <Default title="A Cavernous Blog - Grayvox">
-    <h1>A Cavernous Blog</h1>
-    <p>Thoughts? Rants? Ramblings? Lectures? Lessons? Hard to know. Read and find out.</p>
-    <br>
-    <ul>
-        {
-            posts.map(post => (
-                <BlogCard 
-                    id={post.id}
-                    title={post.data.title}
-                    date={post.data.date}
-                    tag={post.data.tag}
-                />
-            ))
-        }
-    </ul>
+    <div>
+        <h1>A Cavernous Blog</h1>
+        <p>
+            Thoughts? Rants? Ramblings? Lectures? Lessons? Hard to know. Read
+            and find out.
+        </p>
+        <br />
+    </div>
+    <div>
+        <ul>
+            {
+                posts.map((post) => (
+                    <BlogCard
+                        id={post.id}
+                        title={post.data.title}
+                        date={post.data.date}
+                        tag={post.data.tag}
+                    />
+                ))
+            }
+        </ul>
+    </div>
 </Default>
