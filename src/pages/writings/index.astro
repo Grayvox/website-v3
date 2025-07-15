@@ -1,4 +1,5 @@
 ---
+import BasicCard from "../../components/BasicCard.astro";
 import Default from "../../layouts/Default.astro";
 ---
 
@@ -6,13 +7,21 @@ import Default from "../../layouts/Default.astro";
     <div>
         <h1>Writings</h1>
         <p>
-            I write - a lot. So I've divided everything up into sections so it's easier to find what you're 
-            looking for.
+            I write - a lot. So I've divided everything up into sections so it's
+            easier to find what you're looking for.
         </p>
         <p>
-            <a href="/writings/blog">» Blog</a>
-            <br>
-            <a href="/writings/tales">» Tales</a>
+            <ul>
+                <a class="no-line" href="/writings/blog">
+                    <BasicCard
+                        title="A Cavernous Blog 🔗"
+                        subtext="Published from 2024 - Present"
+                        link="/writings/blog"
+                    >
+                        Thoughts? Rants? Ramblings? Lectures? Lessons? Hard to know. Read and find out.
+                    </BasicCard>
+                </a>
+            </ul>
         </p>
     </div>
 </Default>

@@ -6,7 +6,7 @@ const { id, title, date, tag } = Astro.props;
 
 <li>
     <a class="no-line" href={`/writings/blog/${id}`}>
-        <h3 class="no-break no-line">{title}</h3>
+        <h3 class="no-break no-line">{title} 🔗</h3>
         <p class="text-cat-subtext0 no-underline">↳ <FormattedDate date={date} />・{tag}</p>
     </a>
 </li>

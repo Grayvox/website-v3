@@ -41,7 +41,10 @@ body {
 
 h1, h2, h3 {
   font-weight: 800;
-  margin-bottom: 5rem auto 2rem auto;
+}
+
+h2, h3 {
+  margin: 5rem auto 2rem auto;
 }
 
 .no-break {

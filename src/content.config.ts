@@ -7,6 +7,7 @@ const blog = defineCollection({
     schema: z.object({
         title: z.string(),
         tag: z.enum([
+            '#programming',
             '#webdev',
             '#gamedev',
             '#obsidian',
@@ -22,7 +23,7 @@ const projects = defineCollection({
     loader: glob({ pattern: "**/*.md", base: "./src/data/projects" }),
     schema: z.object({
         title: z.string(),
-        builtWith: z.string(),
+        subtext: z.string(),
         links: z.object({
             github: z.string().optional(),
             web: z.string().optional(),

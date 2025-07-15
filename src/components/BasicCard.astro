@@ -1,0 +1,12 @@
+---
+const { title, subtext } = Astro.props;
+---
+
+<li>
+    <h3 class="no-break no-line">{title}</h3>
+    <p>
+        <slot />
+        <br>
+        <span class="text-cat-subtext0">↳ {subtext}</span>
+    </p>
+</li>

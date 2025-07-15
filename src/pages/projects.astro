@@ -1,5 +1,5 @@
 ---
-import ProjectCard from "../components/ProjectCard.astro";
+import BasicCard from "../components/BasicCard.astro";
 import Default from "../layouts/Default.astro";
 
 import { getCollection } from "astro:content";
@@ -9,17 +9,20 @@ const projects = await getCollection("projects");
 <Default title="Project Roster - Grayvox">
     <div>
         <h1>Project Roster</h1>
+        <p>
+            Any projects I'm actively working on that <i>aren't</i> just words on "paper".
+        </p>
     </div>
     <div>
         <ul class="mt-10">
             {
                 projects.map((project) => (
-                    <ProjectCard
+                    <BasicCard
                         title={project.data.title}
-                        builtWith={project.data.builtWith}
+                        subtext={project.data.subtext}
                     >
                         {project.body}
-                    </ProjectCard>
+                    </BasicCard>
                 ))
             }
         </ul>

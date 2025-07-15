@@ -3,7 +3,10 @@ import BlogCard from "../../../components/BlogCard.astro";
 import Default from "../../../layouts/Default.astro";
 
 import { getCollection } from "astro:content";
-const posts = await getCollection("blog");
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
 ---
 
 <Default title="A Cavernous Blog - Grayvox">
@@ -13,7 +16,6 @@ const posts = await getCollection("blog");
             Thoughts? Rants? Ramblings? Lectures? Lessons? Hard to know. Read
             and find out.
         </p>
-        <br />
     </div>
     <div>
         <ul>
