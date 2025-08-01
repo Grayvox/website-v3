@@ -37,6 +37,7 @@
 
 body {
     background-color: var(--color-cat-base);
+    min-height: 100vh;
 }
 
 h1, h2, h3 {

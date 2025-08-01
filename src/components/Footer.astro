@@ -1,0 +1,38 @@
+---
+import { Icon } from "astro-icon/components";
+import Link from "./Link.astro";
+
+const today = new Date();
+---
+
+<style>
+    footer {
+        height: 100px;
+        margin-bottom: -100px;
+    }
+</style>
+<footer>
+    <div class="flex">
+        <div class="text-cat-subtext0 mr-auto">
+            &copy; {today.getFullYear()} Grayvox
+        </div>
+        <div class="flex gap-2.5">
+            <Link to="https://bsky.app/profile/grayvox.dev">
+                <Icon name="ri:bluesky-fill" class="text-3xl text-cat-subtext0 hover:text-cat-text" />
+            </Link>
+            <Link to="https://x.com/grayvoxdev">
+                <Icon name="ri:twitter-fill" class="text-3xl text-cat-subtext0 hover:text-cat-text" />
+            </Link>
+            <Link to="https://github.com/grayvox">
+                <Icon name="ri:github-fill" class="text-3xl text-cat-subtext0 hover:text-cat-text" />
+            </Link>
+            <Link to="https://bento.me/grayvox">
+                <Icon name="ri:link" class="text-3xl text-cat-subtext0 hover:text-cat-text" />
+            </Link>
+            <Link to="https://discord.gg/cX5UGfpexf">
+                <Icon name="ri:discord-fill" class="text-3xl text-cat-subtext0 hover:text-cat-text" />
+            </Link>
+            
+        </div>
+    </div>
+</footer>
