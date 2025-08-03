@@ -6,9 +6,12 @@ import NavLink from './NavLink.astro';
 ---
 
 <div class="flex">
-    <div class="grow-1">
-        <Image src={GrayVisor} alt="Wolf with sunglasses avatar" width="50" class="hidden xl:block" />
+    <div>
+        <a href="/">
+            <Image src={GrayVisor} alt="Wolf with sunglasses avatar" width="50" class="hidden xl:block" />
+        </a>
     </div>
+    <div class="grow-1"></div>
     <div class="mx-auto my-auto flex-1">
         <NavLink href="/">Home</NavLink>
         <NavLink href="/projects">Projects</NavLink>
