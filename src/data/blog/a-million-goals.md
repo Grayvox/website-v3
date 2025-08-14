@@ -1,6 +1,7 @@
 ---
 title: 'The man with a million goals'
 tag: '#thoughts'
+summary: 'Or woman. Or person. Or folk. Whatever you vibe with.'
 date: 'Sep 25 2024'
 ---
 

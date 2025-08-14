@@ -1,6 +1,7 @@
 ---
 title: 'Hello, world'
 tag: '#thoughts'
+summary: '...Do you... really need a summary here...?'
 date: 'Jul 1 2024'
 ---
 

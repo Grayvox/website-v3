@@ -1,6 +1,7 @@
 ---
 title: 'Try reading the docs'
 tag: '#programming'
+summary: 'Try it, you might like it. -Dr. Suess'
 date: 'Feb 17 2025'
 ---
 

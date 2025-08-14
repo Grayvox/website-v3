@@ -1,12 +1,20 @@
 ---
-const { title, subtext } = Astro.props;
+import ProjectLinks from "./ProjectLinks.astro";
+
+const { title, subtext, links } = Astro.props;
 ---
 
-<li>
+<div class="flex">
     <h3 class="no-break no-line">{title}</h3>
-    <p>
-        <slot />
-        <br>
-        <span class="text-cat-subtext0">↳ {subtext}</span>
-    </p>
-</li>
+    <div class="grow-1"></div> 
+    {
+        links ? 
+            <ProjectLinks links={links} />
+        : null
+    }
+</div>
+<p>
+    <slot />
+    <br />
+    <span class="text-cat-subtext0">↳ {subtext}</span>
+</p>

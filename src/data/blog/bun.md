@@ -1,6 +1,7 @@
 ---
 title: 'Joining the Bun hype train'
 tag: '#webdev'
+summary: 'Bunbunbunbunbunbunbunbunbunbunbunbun'
 date: 'Jan 22 2025'
 ---
 

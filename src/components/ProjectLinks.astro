@@ -1,0 +1,44 @@
+---
+import { Icon } from "astro-icon/components";
+import Link from "./Link.astro";
+
+const { links } = Astro.props;
+---
+
+<div class="flex gap-2">
+    {
+        links.github ? 
+            <Link to={links.github}>
+                <Icon name="ri:github-fill" class="text-3xl text-cat-subtext0 hover:text-cat-text" />
+            </Link>
+        : null
+    }
+    {
+        links.web ? 
+            <Link to={links.web}>
+                <Icon name="ri:global-line" class="text-3xl text-cat-subtext0 hover:text-cat-text" />
+            </Link>
+        : null
+    }
+    {
+        links.docs ? 
+            <Link to={links.docs}>
+                <Icon name="ri:book-2-line" class="text-3xl text-cat-subtext0 hover:text-cat-text" />
+            </Link>
+        : null
+    }
+    {
+        links.itch ? 
+            <Link to={links.itch}>
+                <Icon name="ri:store-2-line" class="text-3xl text-cat-subtext0 hover:text-cat-text" />
+            </Link>
+        : null
+    }
+    {
+        links.steam ? 
+            <Link to={links.steam}>
+                <Icon name="ri:steam-fill" class="text-3xl text-cat-subtext0 hover:text-cat-text" />
+            </Link>
+        : null
+    }
+</div>

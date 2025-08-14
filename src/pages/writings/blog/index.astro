@@ -3,13 +3,12 @@ import BlogCard from "../../../components/BlogCard.astro";
 import Default from "../../../layouts/Default.astro";
 
 import { getCollection } from "astro:content";
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+const posts = (await getCollection("blog")).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
-
 ---
 
-<Default title="A Cavernous Blog - Grayvox">
+<Default title="A Cavernous Blog | Grayvox">
     <div>
         <h1>A Cavernous Blog</h1>
         <p>
@@ -21,12 +20,17 @@ const posts = (await getCollection('blog')).sort(
         <ul>
             {
                 posts.map((post) => (
-                    <BlogCard
-                        id={post.id}
-                        title={post.data.title}
-                        date={post.data.date}
-                        tag={post.data.tag}
-                    />
+                    <li>
+                        <a class="no-line" href=`/writings/blog/${post.id}`>
+                            <BlogCard
+                                title={post.data.title}
+                                date={post.data.date}
+                                tag={post.data.tag}
+                            >
+                                {post.data.summary}
+                            </BlogCard>
+                        </a>
+                    </li>
                 ))
             }
         </ul>

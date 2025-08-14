@@ -1,12 +1,15 @@
 ---
 import FormattedDate from "./FormattedDate.astro";
 
-const { id, title, date, tag } = Astro.props;
+const { title, summary, date, tag } = Astro.props;
 ---
 
-<li>
-    <a class="no-line" href={`/writings/blog/${id}`}>
-        <h3 class="no-break no-line">{title}</h3>
-        <p class="text-cat-subtext0 no-underline">↳ <FormattedDate date={date} />・{tag}</p>
-    </a>
-</li>
+<div>
+    <h3 class="no-break no-line">{title}</h3>
+    <p class="no-break">
+        <slot />
+    </p>
+    <p class="text-cat-subtext0 no-underline">
+        ↳ <FormattedDate date={date} />・{tag}
+    </p>
+</div>

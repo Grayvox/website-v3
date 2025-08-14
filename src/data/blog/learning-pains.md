@@ -1,6 +1,7 @@
 ---
 title: 'The pains of learning Computer Science'
 tag: '#programming'
+summary: "TL;DR I'm in agony almost 24/7 so you get to hear about it"
 date: 'Dec 19 2024'
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: 'Your project, your rules'
 tag: '#thoughts'
+summary: 'If I had a nickel for every time I searched through Reddit for the "best web framework"...'
 date: 'Jul 16 2024'
 ---
 

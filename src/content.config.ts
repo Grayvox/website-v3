@@ -15,6 +15,7 @@ const blog = defineCollection({
             '#thoughts',
             '#hardware'
         ]),
+        summary: z.string().optional(),
         date: z.coerce.date()
     })
 });

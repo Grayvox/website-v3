@@ -6,23 +6,27 @@ import { getCollection } from "astro:content";
 const projects = await getCollection("projects");
 ---
 
-<Default title="Project Roster - Grayvox">
+<Default title="Project Roster | Grayvox">
     <div>
         <h1>Project Roster</h1>
         <p>
-            Any projects I'm actively working on that <i>aren't</i> just words on "paper".
+            Any projects I'm actively working on that <i>aren't</i> just words on
+            "paper".
         </p>
     </div>
     <div>
         <ul class="mt-10">
             {
                 projects.map((project) => (
-                    <BasicCard
-                        title={project.data.title}
-                        subtext={project.data.subtext}
-                    >
-                        {project.body}
-                    </BasicCard>
+                    <li>
+                        <BasicCard
+                            title={project.data.title}
+                            subtext={project.data.subtext}
+                            links={project.data.links}
+                        >
+                            {project.body}
+                        </BasicCard>
+                    </li>
                 ))
             }
         </ul>
