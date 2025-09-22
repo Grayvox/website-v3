@@ -31,7 +31,11 @@ const projects = defineCollection({
             docs: z.string().optional(),
             itch: z.string().optional(),
             steam: z.string().optional(),
-        }).optional()
+        }).optional(),
+        category: z.enum([
+            'media',
+            'programming'
+        ])
     })
 })
 

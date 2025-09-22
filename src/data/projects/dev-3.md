@@ -3,6 +3,7 @@ title: 'Character Sheets'
 subtext: 'Obsidian, TypeScript, Node.js'
 links:
     github: 'https://github.com/Grayvox/obsidian-character-sheets'
+category: 'programming'
 ---
 
 Create character sheets for your very own traumatized little guys in Obsidian.
