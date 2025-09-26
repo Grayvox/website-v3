@@ -1,8 +1,116 @@
 ---
-import Greetings from "../components/Greetings.astro";
+import Card from "../components/Card.astro";
+import Link from "../components/Link.astro";
 import Default from "../layouts/Default.astro";
 ---
 
 <Default title="Welcome to Grayvox Labs">
-	<Greetings />
+	<h1 class="mb-8">👋 Greetings humans</h1>
+	<div>
+		<p>
+			I'm Gray, short for Grayvox
+			<span class="text-cat-subtext0">(/grā-vŏks/)</span>. That's an
+			assumed name of course. Curious about my real name? Try
+			<Link to="https://youtu.be/zesdXeaLCDI?si=WEmozhovnTbfRw7h&t=123">
+				here.
+			</Link>
+		</p>
+		<p>
+			I'm a writer at heart - of code, stories, games, novels, ideas... anything, 
+			really. I'm currently working on some personal projects along with doing front 
+			end work for <Link to="https://stable.dev">stable.dev</Link>, a hosting platform 
+			for Discord bots that is as scalable as possible. If you're curious about doing
+			work with me or have an employment opportunity you'd want me for, consider 
+			contacting me <Link to="mailto:gray@grayvox.com">here</Link>.
+		</p> 
+		<p>
+			Below is a collection of my current endeavours and work, enjoy the reading. ✌️
+		</p>
+		<div>
+			<Card
+				title="Writing"
+				subtext=`"There's always another secret." ―Brandon Sanderson, Mistborn: The Final Empire`
+			>
+				I write. A lot. In many ways it's at the root of all of my main passions 
+				and endeavours. Keeping people up to date on my writing projects is hard
+				because I often bounce between many at once. I also might be fixating on
+				one that I won't be in a week. Tis the life of a neurodivergent writer...
+				Anyways, in terms of my main writing projects, I run 
+				<Link to="/writings/blog">my own blog</Link> right here on this website,
+				which mostly discusses... anything and everything involving my current
+				projects and learning. I plan on doing more short story work, and have
+				a secret novel project in the works that will hopefully come to fruition
+				enough that I can talk about it publically... but we'll see.
+			</Card>
+			<Card
+				title="Programming"
+				subtext=`"Code Is Poetry." ―The WordPress Foundation`
+			>
+				I started coding in Java, for Minecraft mods and plugins. Don't feel bad 
+				for me, I did it to myself. Nowadays, I'm a bit insane, so I have tried 
+				(and am still trying) experimenting with many different programming 
+				languages for pure curiosity's sake. Currently, I'm finding TypeScript 
+				to be my go to, however I also am dipping into Rust and Python, with a 
+				bit of Go and C# planned for the future. Almost all of my projects are 
+				open source on
+				<Link to="https://github.com/Grayvox" line={true}>GitHub</Link>.
+				My current focuses are a motivational and project app called
+				<Link to="https://docs.grayvox.com/journalore/readme" line={true}>Journalore</Link>, 
+				and a website template for web fictions called 
+				<Link to="https://docs.grayvox.com/supernovel/readme" line={true}>Supernovel</Link>. 
+				I dip into many different forms of programming from game dev, to system 
+				level, to automation, to web servers... yeah. Expect a lot of random 
+				projects.
+			</Card>
+			<Card
+				title="Obsidian"
+				subtext=`"...the files you create are more important than the tools you use to create them." ―Steph Ango`
+			>
+				Obsidian is my favorite software (that I've found). Put simply, it's a 
+				Markdown file editor on steroids - featuring plugins, multiple styles of 
+				file management, graph views, "Bases" for database tables and more. I'm 
+				not hugely into the whole "second brain" methodology that many use with 
+				it, but as a writer and intense planner, Obsidian is my driver for any 
+				project I come up with. From novels, to job applications, to game design
+				concepts, to TTRPG characters... I use it for everything basically. But
+				above all, writing. I even wrote 
+				<Link to="https://docs.grayvox.com/obsidian-plugins/readme" line={true}>some Obsidian plugins</Link>
+				of my own too.
+			</Card>
+			<Card title="Video and Streams" subtext=`"Oxygen capitalism is a beautiful thing." ―DougDoug`>
+				When time allows, to showcase my projects and do talks on my current
+				thoughts and random things I'm learning, I stream on 
+				<Link to="https://twitch.tv/grayvoxdev">Twitch</Link>. Streaming happens 
+				more often, since I often am not a consistent video editor, but can be 
+				sporadic. I always give updates on my socials if I'm planning on going 
+				live though, and if you still miss them, I post the VODs on 
+				<Link to="https://youtube.com/@GrayvoxLive">my live channel</Link>.
+				I also occasionally post edited videos on 
+				<Link to="https://youtube.com/@Grayvox">my main channel</Link> and 
+				something called 
+				<Link to="https://youtube.com/@CavernOfThought">Cavern Of Thought</Link>.
+				My main channel is for project videos, previews and occasional fiction 
+				work. Meanwhile, Cavern Of Thought is a channel for short, simple videos
+				about random topics involving writing, creating or coding new projects 
+				and what I find is best to make them happen.
+			</Card>
+			<Card title="Game Dev" subtext=`"Was this a good decision? I believe so." ―Mike Klubnika`>
+				I loved video games already - and then I found out making them is not that 
+				difficult. This, coupled with the newly added Software and Game Development 
+				category on Twitch, I finally decided a few years ago to make my game dev
+				journey happen. Thus far, I've competed in 
+				<Link to="https://grayvox.itch.io/noirdo">Pirate Jam 15</Link> and 
+				<Link to="https://grayvox.itch.io/they-are-unworthy">16</Link>, with plans
+				to compete in more jams and also make my own games seperately. The genres
+				that I like to explore tend to be retro 2D, PS1 style 3D, visual novels, 
+				horror and point and click. Creators like 
+				<Link to="https://x.com/theRayll">Rayll</Link>, 
+				<Link to="https://mikeklubnika.com">Mike Klubnika</Link>, 
+				<Link to="https://www.youtube.com/@Trioskaz">Trioskaz</Link>,
+				<Link to="https://www.wrongorgan.com">Wrong Organ</Link>
+				and <Link to="https://dukope.com">Lucas Pope</Link>
+				are my personal inspirations.
+			</Card>
+		</div>
+	</div>
 </Default>

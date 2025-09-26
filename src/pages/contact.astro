@@ -2,6 +2,33 @@
 import Card from "../components/Card.astro";
 import Link from "../components/Link.astro";
 import Default from "../layouts/Default.astro";
+
+const methods = [
+    {
+        link: "mailto:gray@grayvox.com",
+        title: "Email",
+        usage: "For business and collabs",
+        handle: "gray@grayvox.com",
+    },
+    {
+        link: "https://discord.com/users/1263900642741583923",
+        title: "Discord",
+        usage: "For everything",
+        handle: "@grayvoxdev",
+    },
+    {
+        link: "https://bsky.app/profile/grayvox.com",
+        title: "Bluesky",
+        usage: "For personal communication",
+        handle: "@grayvox.com",
+    },
+    {
+        link: "https://x.com/GrayvoxDev",
+        title: "Twitter",
+        usage: "For personal communication (I don't really use this)",
+        handle: "@GrayvoxDev",
+    },
+];
 ---
 
 <Default title="Contact Me | Grayvox">
@@ -9,38 +36,15 @@ import Default from "../layouts/Default.astro";
         <h1>Contact Me</h1>
         <p>In level of "priority"</p>
         <div>
-            <Link
-                to="mailto:gray@grayvox.com"
-                line={false}
-            >
-                <Card title="Email" subtext="For business and collabs"
-                    >gray@grayvox.com</Card
-                >
-            </Link>
-            <Link
-                to="https://discord.com/users/1263900642741583923"
-                line={false}
-            >
-                <Card title="Discord" subtext="For everything"
-                    >@grayvoxdev</Card
-                >
-            </Link>
-            <Link
-                to="https://bsky.app/profile/grayvox.com"
-                line={false}
-            >
-                <Card title="Bluesky" subtext="For personal communication"
-                    >@grayvox.com</Card
-                >
-            </Link>
-            <Link
-                to="https://x.com/GrayvoxDev"
-                line={false}
-            >
-                <Card title="Twitter" subtext="For personal communication (I don't really use this)"
-                    >@GrayvoxDev</Card
-                >
-            </Link>
+            {
+                methods.map((method) => (
+                        <Link to={method.link} line={false}>
+                            <Card title={method.title} subtext={method.usage} hover={true}>
+                                {method.handle}
+                            </Card>
+                        </Link>
+                ))
+            }
         </div>
     </div>
 </Default>

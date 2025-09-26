@@ -3,6 +3,7 @@ title: 'Supernovel'
 subtext: 'Astro, Tailwind, Bun, TypeScript'
 links:
     github: 'https://github.com/Grayvox/supernovel'
+    web: 'https://docs.grayvox.com/supernovel/readme'
 category: 'programming'
 ---
 

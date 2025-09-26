@@ -3,6 +3,7 @@ title: 'Journalore'
 subtext: 'SvelteKit, Bun and Tauri'
 links:
     github: 'https://github.com/Grayvox/journalore'
+    web: 'https://docs.grayvox.com/journalore/readme'
 category: 'programming'
 ---
 
