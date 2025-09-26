@@ -1,5 +1,12 @@
 ---
-const { to } = Astro.props;
+const { to, line = true } = Astro.props;
 ---
 
-<a href={to} target="_blank" rel="noopener noreferrer"><slot /></a>
+<a
+    class={line ? "" : "no-line"}
+    href={to}
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <slot />
+</a>

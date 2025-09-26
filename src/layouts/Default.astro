@@ -13,6 +13,10 @@ import "../styles/global.css";
         height: 100%;
     }
 
+    @view-transition {
+        navigation: auto;
+    }
+
     main {
         min-height: 100%;
     }
@@ -26,10 +30,10 @@ import "../styles/global.css";
 <Head title={title} />
 <body>
     <div>
-        <div class="px-[25rem] py-10">
+        <div class="lg:px-[25rem] py-10">
             <Header />
         </div>
-        <div class="mt-[3rem] mx-[25rem] text-cat-text">
+        <div class="mt-[3rem] lg:mx-[25rem] mx-[1rem] text-cat-text">
             <main>
                 <slot />
             </main>

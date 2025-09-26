@@ -1,5 +1,5 @@
 ---
-import BlogCard from "../../../components/BlogCard.astro";
+import Card from "../../../components/Card.astro";
 import Default from "../../../layouts/Default.astro";
 
 import { getCollection } from "astro:content";
@@ -22,13 +22,13 @@ const posts = (await getCollection("blog")).sort(
                 posts.map((post) => (
                     <li>
                         <a class="no-line" href=`/writings/blog/${post.id}`>
-                            <BlogCard
+                            <Card
                                 title={post.data.title}
-                                date={post.data.date}
+                                timestamp={post.data.date}
                                 tag={post.data.tag}
                             >
                                 {post.data.summary}
-                            </BlogCard>
+                            </Card>
                         </a>
                     </li>
                 ))

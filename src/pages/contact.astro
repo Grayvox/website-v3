@@ -1,18 +1,46 @@
 ---
+import Card from "../components/Card.astro";
+import Link from "../components/Link.astro";
 import Default from "../layouts/Default.astro";
 ---
 
 <Default title="Contact Me | Grayvox">
     <div>
         <h1>Contact Me</h1>
-        <p>
-            ↳ <a class="text-cat-flamingo" href="mailto:gray@grayvox.com">Email</a>
-            <br>
-            ↳ <a class="text-cat-blue" href="https://discord.com/users/1263900642741583923" target="_blank" rel="noopener noreferrer">Discord</a>
-        </p>
-        <p>
-            <b>DISCLAIMER:</b> I prefer contact over Discord, UNLESS it is for a more professional 
-            matter (e.g. collaboration or partnership). 
-        </p>
+        <p>In level of "priority"</p>
+        <div>
+            <Link
+                to="mailto:gray@grayvox.com"
+                line={false}
+            >
+                <Card title="Email" subtext="For business and collabs"
+                    >gray@grayvox.com</Card
+                >
+            </Link>
+            <Link
+                to="https://discord.com/users/1263900642741583923"
+                line={false}
+            >
+                <Card title="Discord" subtext="For everything"
+                    >@grayvoxdev</Card
+                >
+            </Link>
+            <Link
+                to="https://bsky.app/profile/grayvox.com"
+                line={false}
+            >
+                <Card title="Bluesky" subtext="For personal communication"
+                    >@grayvox.com</Card
+                >
+            </Link>
+            <Link
+                to="https://x.com/GrayvoxDev"
+                line={false}
+            >
+                <Card title="Twitter" subtext="For personal communication (I don't really use this)"
+                    >@GrayvoxDev</Card
+                >
+            </Link>
+        </div>
     </div>
 </Default>

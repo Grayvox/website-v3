@@ -1,0 +1,24 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+import ProjectLinks from "./ProjectLinks.astro";
+
+// Links, timestamp and tag are NOT required for a basic card
+const { title, subtext, links, timestamp, tag } = Astro.props;
+
+const boxHoverEffect = links ? '' : 'hover:border-cat-overlay2';
+---
+
+<div class=`mb-3 p-3 border border-cat-surface2 ${boxHoverEffect} rounded-2xl`>
+    <div class="flex">
+        <h3 class="no-break no-line">{title}</h3>
+        <div class="grow-1"></div>
+        {links ? <ProjectLinks links={links} /> : null}
+    </div>
+    <p class="no-break">
+        <slot />
+        <br />
+        <span class="text-cat-subtext0">↳ {timestamp ? (
+            <FormattedDate date={timestamp} /> <span>{tag}</span>
+        ) : subtext}</span>
+    </p>
+</div>

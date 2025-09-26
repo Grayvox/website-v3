@@ -1,5 +1,5 @@
 ---
-import BasicCard from "../components/BasicCard.astro";
+import Card from "../components/Card.astro";
 import Default from "../layouts/Default.astro";
 
 import { getCollection } from "astro:content";
@@ -29,13 +29,13 @@ const programming = (await getCollection("projects")).filter(entry => {
                 {
                     media.map((project) => (
                         <li>
-                            <BasicCard
+                            <Card
                                 title={project.data.title}
                                 subtext={project.data.subtext}
                                 links={project.data.links}
                             >
                                 {project.body}
-                            </BasicCard>
+                            </Card>
                         </li>
                     ))
                 }
@@ -48,13 +48,13 @@ const programming = (await getCollection("projects")).filter(entry => {
                 {
                     programming.map((project) => (
                         <li>
-                            <BasicCard
+                            <Card
                                 title={project.data.title}
                                 subtext={project.data.subtext}
                                 links={project.data.links}
                             >
                                 {project.body}
-                            </BasicCard>
+                            </Card>
                         </li>
                     ))
                 }
