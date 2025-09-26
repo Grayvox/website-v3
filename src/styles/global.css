@@ -35,9 +35,13 @@
   font-feature-settings: 'liga' 1, 'calt' 1;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 body {
-    background-color: var(--color-cat-base);
-    min-height: 100vh;
+  background-color: var(--color-cat-base);
+  min-height: 100vh;
 }
 
 h1, h2, h3 {
