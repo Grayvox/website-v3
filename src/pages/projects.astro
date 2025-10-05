@@ -4,14 +4,12 @@ import Default from "../layouts/Default.astro";
 
 import { getCollection } from "astro:content";
 
-const media = (await getCollection("projects")).filter(entry => {
-        return entry.data.category == 'media'
-    }
-);
-const programming = (await getCollection("projects")).filter(entry => {
-        return entry.data.category == 'programming'
-    }
-);
+const media = (await getCollection("projects")).filter((entry) => {
+    return entry.data.category == "media";
+});
+const programming = (await getCollection("projects")).filter((entry) => {
+    return entry.data.category == "programming";
+});
 ---
 
 <Default title="Project Roster | Grayvox">
@@ -34,14 +32,14 @@ const programming = (await getCollection("projects")).filter(entry => {
                                 subtext={project.data.subtext}
                                 links={project.data.links}
                             >
-                                {project.body}
+                                <p class="no-break">{project.body}</p>
                             </Card>
                         </li>
                     ))
                 }
             </ul>
         </div>
-        <hr>
+        <hr />
         <div>
             <h2>Dev Work</h2>
             <ul class="mt-10">
@@ -53,7 +51,7 @@ const programming = (await getCollection("projects")).filter(entry => {
                                 subtext={project.data.subtext}
                                 links={project.data.links}
                             >
-                                {project.body}
+                                <p class="no-break">{project.body}</p>
                             </Card>
                         </li>
                     ))

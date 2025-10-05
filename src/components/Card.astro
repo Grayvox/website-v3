@@ -14,11 +14,12 @@ const boxHoverEffect = hover ? 'hover:border-cat-overlay2' : '';
         <div class="grow-1"></div>
         {links ? <ProjectLinks links={links} /> : null}
     </div>
-    <p class="no-break">
-        <slot />
-        <br />
-        <span class="text-cat-subtext0">↳ {timestamp ? (
-            <FormattedDate date={timestamp} /> <span>{tag}</span>
-        ) : subtext}</span>
-    </p>
+    <slot />
+    <span class="text-cat-subtext0">
+        ↳ {
+            timestamp ? (
+                <FormattedDate date={timestamp} /> <span>{tag}</span>
+            ) : subtext
+        }
+    </span>
 </div>

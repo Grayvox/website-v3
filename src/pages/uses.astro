@@ -1,0 +1,129 @@
+---
+import Card from "../components/Card.astro"
+import Link from "../components/Link.astro";
+import Default from "../layouts/Default.astro";
+---
+<style>
+    ul {
+        list-style-type: circle;
+    }
+</style>
+<Default title="What I Use to Get Stuff Done | Grayvox">
+    <div>
+        <h1>Uses</h1>
+        <p>
+            Details on the tools and setup I use to make stuff happen. Inspired
+            by
+            <Link to="https://sapphic.moe/uses">Sapphic</Link>,
+            <Link to="https://natalie.sh/uses">Natalie</Link>,
+            <Link to="https://ovyerus.com/uses">Ovyerus</Link> and
+            <Link to="https://wesbos.com/uses">Wes Bos</Link>.
+        </p>
+    </div>
+    <div>
+        <Card title="Computer Systems" subtext="Last updated on October 4th, 2025">
+            <p class="no-break font-bold">Alpha One (Custom built main desktop)</p>
+            <ul class="ml-5 mb-5">
+                <li>OS - Windows 11 with Ubuntu on WSL2</li>
+                <li>CPU - Intel i7-13700k</li>
+                <li>GPU - Gigabyte GeForce RTX 4060 8GB</li>
+                <li>Memory - 32GB DDR5 RAM</li>
+                <li>Main Drive - Samsung 990 EVO 1TB M.2 SSD</li>
+                <li>Secondary Drive - WD_BLACK SN850x 1TB M.2 SSD</li>
+                <li>Case - NZXT H6 Flow (Black)</li>
+            </ul>
+            <p class="no-break font-bold">Berry Allen (Raspberry Pi 5)</p>
+            <ul class="ml-5">
+                <li>Specs coming soon!</li>
+                <li>...</li>
+            </ul>
+        </Card>
+        <Card title="Desk Setup" subtext="Last updated on October 4th, 2025">
+            <p class="no-break font-bold">Displays</p>
+            <ul class="ml-5 mb-5">
+                <li>Main - AOC 24G15N 24 Inch 1920x1080 180hz</li>
+                <li>Secondary - AOC 24G15N 24 Inch 1920x1080 180hz</li>
+            </ul>
+            <p class="no-break font-bold">Audio</p>
+            <ul class="ml-5 mb-5">
+                <li>Microphone - Blue Snowball iCE (Black)</li>
+                <li>Desk Earbuds - JBL Run Endurance 2 (Black)</li>
+                <li>Mobile Earbuds - JBL Vibe Beam (Blue)</li>
+            </ul>
+            <p class="no-break font-bold">Clicky Things</p>
+            <ul class="ml-5">
+                <li>Keyboard - Glorious GMMK 85% TKL</li>
+                <li>Mouse - Roccat Kain 120 AIMO</li>
+                <li>Wrist Rest - Glorious Ergo Wrist Rest</li>
+            </ul>
+        </Card>
+        <Card title="Apps" subtext="Last updated on October 4th, 2025">
+            <p class="no-break font-bold">General</p>
+            <ul class="ml-5 mb-5">
+                <li><Link to="https://vivaldi.com">Vivaldi</Link> for web browsing and email</li>
+                <li><Link to="https://discord.com">Discord</Link> for chatting</li>
+                <li><Link to="https://spotify.com">Spotify</Link> for music, podcasts and audiobooks</li>
+                <li><Link to="https://www.actualbudget.com">Actual</Link> for budgetting and financials</li>
+            </ul>
+            <p class="no-break font-bold">Writing</p>
+            <ul class="ml-5 mb-5">
+                <li><Link to="https://obsidian.md">Obsidian</Link> (duh) for writing, note taking and personal docs</li>
+                <li><Link to="https://stimuwrite.com">StimuWrite</Link> for long writing sessions</li>
+            </ul>
+            <p class="no-break font-bold">Programming</p>
+            <ul class="ml-5 mb-5">
+                <li><Link to="https://code.visualstudio.com">Visual Studio Code</Link> for most programming</li>
+                <li><Link to="https://www.jetbrains.com/idea/">IntelliJ IDEA Community Edition</Link> for JVM-based work</li>
+                <li><Link to="https://github.com/microsoft/terminal">Windows Terminal</Link> for terminal usage</li>
+                <li><Link to="https://github.com/apps/desktop">GitHub Desktop</Link> for my Git workflow</li>
+                <li><Link to="https://penpot.app">Penpot</Link> for UI prototyping and design</li>
+                <li><Link to="https://docker.com/products/docker-desktop">Docker Desktop</Link> for my Docker workflow</li>
+            </ul>
+            <p class="no-break font-bold">Game Dev</p>
+            <ul class="ml-5 mb-5">
+                <li><Link to="https://godotengine.org">Godot</Link> for 2D and 3D game development</li>
+                <li><Link to="https://renpy.org">Ren'Py</Link> for visual novel development</li>
+                <li><Link to="https://adventuregamestudio.co.uk">Adventure Game Studio</Link> for point and click game development</li>
+                <li><Link to="https://aseprite.org">Aseprite</Link> for pixel art and animation</li>
+                <li><Link to="https://blender.org">Blender</Link> for 3D modelling</li>
+                <li><Link to="https://materialmaker.org">Material Maker</Link> for 3D model texturing</li>
+            </ul>
+            <p class="no-break font-bold">Gaming</p>
+            <ul class="ml-5 mb-5">
+                <li><Link to="https://modrinth.com/app">Modrinth App</Link> for my Minecraft launcher</li>
+                <li><Link to="https://store.steampowered.com">Steam</Link> for... basically all my games</li>
+                <li><Link to="https://itch.io/app">itch</Link> for any indie games not on Steam</li>
+                <li><Link to="https://thunderstore.io">Thunderstore</Link> for modding games like R.E.P.O., Lethal Company, etc.</li>
+            </ul>
+            <p class="no-break font-bold">Videos & Streaming</p>
+            <ul class="ml-5">
+                <li><Link to="https://obsproject.org">OBS Studio</Link> for recording and streaming</li>
+                <li><Link to="https://www.blackmagicdesign.com/products/davinciresolve">DaVinci Resolve</Link> for video editing</li>
+                <li><Link to="https://streamavatars.com">Stream Avatars</Link> for funny little characters when I stream</li>
+                <li><Link to="https://kaiakairos.itch.io/pngtuber-plus">PNGTuber Plus</Link> for for my PNGTuber character</li>
+            </ul>
+        </Card>
+        <Card title="Utilities" subtext="Last updated on October 4th, 2025">
+            <p class="no-break font-bold">Windows</p>
+            <ul class="ml-5 mb-5">
+                <li><Link to="https://github.com/glzr-io/glazewm">GlazeWM</Link> for tiling window management</li>
+                <li><Link to="https://github.com/glzr-io/zebar">Zebar</Link> for toolbar and workspace emulation</li>
+                <li><Link to="https://github.com/Raphire/Win11Debloat">Win11Debloat</Link> for tearing out everything I hate in Windows</li>
+            </ul>
+            <p class="no-break font-bold">Linux</p>
+            <ul class="ml-5 mb-5">
+                <li><Link to="https://zsh.org">zsh</Link> for my terminal shell</li>
+                <li><Link to="https://ohmyz.sh">Oh My Zsh</Link> for my shell configuration</li>
+                <li><Link to="https://github.com/romkatv/powerlevel10k">Powerlevel10k</Link> for my Oh My Zsh theme</li>
+                <li><Link to="https://bun.com">Bun</Link> for JavaScript/TypeScript package management</li>
+                <li><Link to="https://docs.astral.sh/uv/">uv</Link> for Python package management</li>
+            </ul>
+            <p class="no-break font-bold">Colors & Fonts</p>
+            <ul class="ml-5">
+                <li><Link to="https://catppuccin.com">Catppuccin Mocha</Link> for dark mode colors</li>
+                <li><Link to="https://rsms.me/inter/">Inter</Link> for most things as a default font</li>
+                <li><Link to="https://github.com/microsoft/cascadia-code">Cascadia Code</Link> for code editors</li>
+            </ul>
+        </Card>
+    </div>
+</Default>

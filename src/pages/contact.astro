@@ -38,11 +38,15 @@ const methods = [
         <div>
             {
                 methods.map((method) => (
-                        <Link to={method.link} line={false}>
-                            <Card title={method.title} subtext={method.usage} hover={true}>
-                                {method.handle}
-                            </Card>
-                        </Link>
+                    <Link to={method.link} line={false}>
+                        <Card
+                            title={method.title}
+                            subtext={method.usage}
+                            hover={true}
+                        >
+                            <p class="no-break">{method.handle}</p>
+                        </Card>
+                    </Link>
                 ))
             }
         </div>

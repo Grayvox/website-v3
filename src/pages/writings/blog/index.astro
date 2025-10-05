@@ -28,7 +28,7 @@ const posts = (await getCollection("blog")).sort(
                                 tag={post.data.tag}
                                 hover={true}
                             >
-                                {post.data.summary}
+                                <p class="no-break">{post.data.summary}</p>
                             </Card>
                         </a>
                     </li>
